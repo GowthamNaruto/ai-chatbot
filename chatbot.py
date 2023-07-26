@@ -14,6 +14,7 @@ stemmer = LancasterStemmer()
 # Other
 warnings.filterwarnings("ignore")
 
+# Loading and processing the intents from a intents.json file
 print("Processing the Intents.....")
 try:
     with open('intents.json') as json_data:
@@ -22,6 +23,7 @@ except FileNotFoundError:
     print("Error: intents.json file not found. Please make sure the file exists.")
     exit(1)
 
+# Tokenizing, stemming, and creating the bag-of-words for training data
 words = []
 classes = []
 documents = []
@@ -51,6 +53,7 @@ print(len(documents), "documents")
 print(len(classes), "classes", classes)
 print(len(words), "unique stemmed words", words)
 
+# Crating training data in the from of bags of words and output rows
 print("Creating the Data for our Model.....")
 training = []
 output = []
@@ -59,6 +62,9 @@ output_empty = [0] * len(classes)
 print("Creating Traning Set, Bag of Words for our Model....")
 max_bag_length = 0  # Initialize maximum bag length
 training_data = []  # Separate list to store bag and output_row
+
+''' In this step, the code tokenizes each sentence(pattern), performs stemming to find the root of each word, and then creates a bag-of-words representation for each sentences. The training data is a list of tuples, where each tuple contains a bag of words and an output row(a one-hot encoded vector) corresponding to the intent tag.'''
+
 # List of zeros with length equal to the number of classes
 output_empty = [0] * len(classes)
 for doc in documents:
@@ -100,7 +106,8 @@ print("Building Neural Network for Our Chatbot to be Contextual....")
 print("Resetting graph data....")
 tf.compat.v1.reset_default_graph()
 
-
+# Building and training the neural network model
+''' In this step, a simple feedforward neural network is created using "Keras Sequential" The model consist of an input layer with 8 neurons each, and an output layer with the same number of neurons as the classes in the training data. The model is then trained on the training dataset for 1000 epochs using the Adam optimizer and categorical cross-entropy loss function.'''
 model = Sequential()
 model.add(Dense(8, input_dim=max_bag_length, activation='relu'))
 model.add(Dense(8, activation='relu'))
@@ -115,6 +122,8 @@ except Exception as e:
     print("Error occured during model training: ", e)
     exit(1)
 
+# Saving the trained model and training data as "Pickle" files
+'''The trained model is saved as "model.keras" and the training data, including the vocabulary(words), class lables(classes), and the training sets(`train_x` and `train_y), are saven as a pickle file.'''
 print("Saving the Model.......")
 try:
     model.save('model.keras')
@@ -130,6 +139,8 @@ try:
 except Exception as e:
     print("Error occured while saving the pickle data: ", e)
 
+# Loading the trained model and pickle data
+''' In this step, the previously saved pickle data is loaded, and the chatbot model id loaded from the "model.keras" file.'''
 print("Loading Pickle.....")
 try:
     data = pickle.load(open("training_data", "rb"))
@@ -148,6 +159,8 @@ try:
 except Exception as e:
     print("Error occured while loading the model: ", e)
     exit(1)
+
+# Defininf utility functions for sentence processing and classifying user input
 
 
 def clean_up_sentence(sentence):
@@ -203,6 +216,7 @@ def response(sentence, userID='123', show_details=False):
             results.pop(0)
 
 
+# Create an interactive loop for the user to chat with the chatbot
 while True:
     input_data = input("You- ")
     answer = response(input_data)
