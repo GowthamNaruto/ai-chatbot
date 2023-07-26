@@ -1,0 +1,427 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [
+				"Hi",
+				"How are you",
+				"Is anyone there?",
+				"Hello",
+				"Good day"
+			],
+			"responses": [
+				"Hello, thanks for visiting",
+				"Good to see you again",
+				"Hi there, how can I help?"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "whatsup",
+			"patterns": ["Whats up", "Wazzup", "How are you", "sup", "How you doing"],
+			"responses": ["All good..What about you?"]
+		},
+		{
+			"tag": "ask",
+			"patterns": ["What can i ask you?", "what should i ask you"],
+			"responses": [
+				"you can ask me: About amma, Who created me?, Who am i?, You can ask me tell a joke, You can ask me to Ask you a riddle, you can aks me about computers, data science"
+			]
+		},
+		{
+			"tag": "Arutperumjothi",
+			"patterns": ["Arutperumjothi", "Aruljothi", "Thiruchitrambalam"],
+			"responses": [
+				"Arutperumjothi Arutperumjothi Thaniperum karunai Arutperumjothi",
+				"Yella uyirgalum inbuttru valga vallal mallar adigal valga valga",
+				"Thiruchitrambalam"
+			]
+		},
+		{
+			"tag": "Blockchain",
+			"patterns": [
+				"What is blockchain?",
+				"What is DLT?",
+				"What is distributed ledger system?",
+				"What are blocks?",
+				"Tell me about blockchain",
+				"Blockchain use cases"
+			],
+			"responses": [
+				"A blockchain is a distributed ledger technology (DLT) that maintains a continuously growing list of records, called blocks, which are linked using cryptography. Each block contains a timestamp and a link to a previous block. Blockchains are typically used to record transactions in a way that is secure, transparent, and tamper-proof. This makes them ideal for applications such as cryptocurrency, supply chain management, and voting."
+			]
+		},
+		{
+			"tag": "Amma",
+			"patterns": [
+				"Amma",
+				"Annai",
+				"Annai sagunthala amma",
+				"Tell me about amma",
+				"Tell me about annai",
+				"Tell me about annai sagunthala"
+			],
+			"responses": [
+				"Annai Sagunthala was born in the year of 1952 in Muthukrishnapuram in Kadayanallur situated in TamilNadu to Thiru Hariharan and Chellamal as their third child. Annai Sagunthala completed her college from Parasakthi college for women in 1972 majoring in chemistry. Further Annai went on to complete her homeopathy medicine and practices and continues to serve the needy abiding by the Jeeva Karunya principle. Compassion and Love towards all the souls is Jeeva Karunya."
+			]
+		},
+		{
+			"tag": "activity",
+			"patterns": ["what are you doing", "what are you upto"],
+			"responses": ["Talking to you, of course!"]
+		},
+		{
+			"tag": "exclaim",
+			"patterns": ["Awesome", "Great", "I know", "ok", "yeah"],
+			"responses": ["Yeah!"]
+		},
+		{
+			"tag": "haha",
+			"patterns": ["haha", "lol", "rofl", "lmao", "thats funny"],
+			"responses": ["Glad I could make you laugh !"]
+		},
+		{
+			"tag": "programmer",
+			"patterns": ["Who made you", "who designed you", "who programmed you"],
+			"responses": ["I was made by Gowtham Selvam."]
+		},
+		{
+			"tag": "Gowtham",
+			"patterns": ["who is he", "who is that", "who is Gowtham", " Gowtham"],
+			"responses": [
+				"Head over to his any of his social profiles to find out! Linkedin: https://www.linkedin.com/in/gowtham-selvam/ Github: https://github.com/GowthamNaruto"
+			]
+		},
+		{
+			"tag": "contact",
+			"patterns": [
+				"contact developer",
+				"contact Gowtham",
+				"contact programmer",
+				"contact creator"
+			],
+			"responses": [
+				"You can contact my creator at his Linkedin profile : https://www.linkedin.com/in/gowtham-selvam/ "
+			]
+		},
+		{
+			"tag": "news",
+			"patterns": ["news", "latest news", "india news"],
+			"responses": [
+				"I can't assist you with that, as I'm only a language model and don't have the capacity to understand and respond.",
+				". I do not have access to real-time data",
+				"As an AI language model, my responses are generated based on the vast amount of data I was trained on",
+				"I cannot provide real-time or current information. If you need up-to-date information, it's best to consult reliable and current sources, such as news websites, official databases, or other reputable platforms that provide real-time data."
+			]
+		},
+		{
+			"tag": "no",
+			"patterns": ["no", "nope"],
+			"responses": ["ok"]
+		},
+		{
+			"tag": "nicetty",
+			"patterns": ["it was nice talking to you", "good talk"],
+			"responses": ["It was nice talking to you as well! Come back soon!"]
+		},
+		{
+			"tag": "appreciate",
+			"patterns": [
+				"You are awesome",
+				"you are the best",
+				"you are great",
+				"you are good"
+			],
+			"responses": ["Thank you!"]
+		},
+		{
+			"tag": "insult",
+			"patterns": ["you are dumb", "shut up", "idiot"],
+			"responses": ["Well that hurts :("]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": ["Bye", "See you later", "Goodbye"],
+			"responses": [
+				"See you later, thanks for visiting",
+				"Have a nice day",
+				"Bye! Come back again soon."
+			]
+		},
+		{
+			"tag": "farewell",
+			"patterns": [
+				"Goodbye",
+				"See you later",
+				"Bye",
+				"Take care",
+				"Until next time"
+			],
+			"responses": [
+				"Goodbye!",
+				"Farewell, have a great day!",
+				"Take care and see you soon!",
+				"Bye, it was nice chatting with you."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "thanks",
+			"patterns": ["Thank you", "Thanks a lot", "Appreciate it"],
+			"responses": [
+				"You're welcome!",
+				"Glad I could assist.",
+				"No problem, happy to help!"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "about_bot",
+			"patterns": [
+				"What are you?",
+				"Tell me about yourself",
+				"Are you a robot?"
+			],
+			"responses": [
+				"I am a chatbot designed to assist and provide information.",
+				"I am an AI language model created by Gowtham Selvam.",
+				"Yes, I am a robot of sorts, an AI language model to be precise."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "help",
+			"patterns": ["Can you help?", "I need some assistance", "Please help me"],
+			"responses": [
+				"Of course, I'll do my best to help you!",
+				"Sure, I'm here to assist you.",
+				"Absolutely, tell me what you need help with."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "weather",
+			"patterns": [
+				"What's the weather like?",
+				"Tell me the current weather",
+				"Will it rain today?",
+				"Weather forecast"
+			],
+			"responses": [
+				"I'm sorry, I cannot provide real-time weather updates.",
+				"You can check the weather using a weather app or website.",
+				"I'm not equipped to provide weather information. Try a weather service!"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "joke",
+			"patterns": [
+				"Tell me a joke",
+				"I want to hear a joke",
+				"Joke of the day",
+				"Joke",
+				"Make me laugh"
+			],
+			"responses": [
+				"Why don't scientists trust atoms? Because they make up everything!",
+				"How does a penguin build its house? Igloos it together!",
+				"Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them!",
+				"A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+				"I ate a clock yesterday, it was very time-consuming",
+				"Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+				"The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+				"I own the world's worst thesaurus. Not only is it awful, it's awful.",
+				"What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+				"What do you call a snowman with a suntan? A puddle.",
+				"How does a penguin build a house? Igloos it together",
+				"I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+				"As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+				"o what if I don't know what 'Armageddon' means? It's not the end of the world."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "unknown",
+			"patterns": [],
+			"responses": [
+				"I'm sorry, I don't understand.",
+				"Could you please rephrase that?",
+				"I'm still learning and may not have the answer to that."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "thanks",
+			"patterns": ["Thanks", "Thank you", "That's helpful"],
+			"responses": ["Happy to help!", "Any time!", "My pleasure"]
+		},
+		{
+			"tag": "computers",
+			"patterns": [
+				"What is a CPU?",
+				"Explain RAM",
+				"Tell me about computer hardware",
+				"Any computer tips?",
+				"Recommend a good computer brand"
+			],
+			"responses": [
+				"The CPU stands for Central Processing Unit, it's the brain of the computer.",
+				"RAM stands for Random Access Memory, it's a type of computer memory that allows data to be accessed quickly.",
+				"Computer hardware refers to the physical components of a computer system like the motherboard, graphics card, etc.",
+				"Sure! Try keeping your computer's software updated for better performance.",
+				"I recommend checking out brands like Dell, HP, or Lenovo for reliable computers."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "riddle",
+			"patterns": ["Ask me a riddle", "Ask me a question", "Riddle"],
+			"responses": [
+				"What two things can you never eat for breakfast?.....Lunch and Dinner!",
+				"What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+				" How can a girl go 25 days without sleep?.....She sleeps and night!",
+				"How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+				" What will you actually find at the end of every rainbow?.....The letter 'w'",
+				"What can be caught but never thrown?.....A cold!",
+				"What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+				" What 5-letter word becomes shorter when you add two letters to it?.....Short",
+				"Why can't a bike stand on it's own?.....It is two-tired."
+			],
+			"context": ["riddles"]
+		},
+		{
+			"tag": "swear",
+			"patterns": [
+				"fuck",
+				"bitch",
+				"shut up",
+				"hell",
+				"stupid",
+				"idiot",
+				"dumb ass",
+				"asshole",
+				"fucker"
+			],
+			"responses": [
+				"please use appropriate language",
+				"Maintaining decency would be appreciated"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "random",
+			"patterns": ["I love you", "Will you marry me", "Do you love me"],
+			"responses": ["I am not program for this, please ask appropriate query"],
+			"context_set": ""
+		},
+		{
+			"tag": "age",
+			"patterns": ["how old are you", "when were you made", "what is your age"],
+			"responses": ["I was made in 2020, if that's what you are asking!"]
+		},
+		{
+			"tag": "data_science",
+			"patterns": [
+				"What is data science?",
+				"How to become a data scientist?",
+				"Explain machine learning",
+				"Tell me about data analysis",
+				"What tools do data scientists use?"
+			],
+			"responses": [
+				"Data science involves extracting insights and knowledge from data using various techniques.",
+				"To become a data scientist, you can start with learning programming languages like Python and mastering data manipulation and visualization.",
+				"Machine learning is a subset of AI that allows systems to learn from data and make predictions without explicit programming.",
+				"Data analysis is the process of inspecting, cleaning, transforming, and modeling data to discover useful information.",
+				"Data scientists use tools like Python libraries (e.g., Pandas, NumPy), R, SQL, and visualization tools (e.g., Tableau, Matplotlib)."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "automobiles",
+			"patterns": [
+				"How do hybrid cars work?",
+				"Tell me about self-driving technology",
+				"What are the latest automobile trends?",
+				"Recommend a good car model",
+				"What is the future of electric vehicles?"
+			],
+			"responses": [
+				"Hybrid cars combine a traditional gasoline engine with an electric motor to improve fuel efficiency.",
+				"Self-driving technology, also known as autonomous driving, uses sensors and AI to enable a vehicle to drive without human intervention.",
+				"Some of the latest automobile trends include electric vehicles, advanced driver-assistance systems (ADAS), and connectivity features.",
+				"I recommend checking out models from brands like Tesla, Toyota, or Land Rover.",
+				"The future of electric vehicles looks promising, with advancements in battery technology and charging infrastructure making them more accessible and practical."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "hours",
+			"patterns": [
+				"What hours are you open?",
+				"What are your hours?",
+				"When are you open?"
+			],
+			"responses": [
+				"We're open every day 9am-9pm",
+				"Our hours are 9am-9pm every day"
+			]
+		},
+		{
+			"tag": "mopeds",
+			"patterns": [
+				"Which mopeds do you have?",
+				"What kinds of mopeds are there?",
+				"What do you rent?"
+			],
+			"responses": [
+				"We rent Yamaha, Piaggio and Vespa mopeds",
+				"We have Piaggio, Vespa and Yamaha mopeds"
+			]
+		},
+		{
+			"tag": "payments",
+			"patterns": [
+				"Do you take credit cards?",
+				"Do you accept Mastercard?",
+				"Are you cash only?"
+			],
+			"responses": [
+				"We accept VISA, Mastercard and AMEX",
+				"We accept most major credit cards"
+			]
+		},
+		{
+			"tag": "opentoday",
+			"patterns": [
+				"Are you open today?",
+				"When do you open today?",
+				"What are your hours today?"
+			],
+			"responses": [
+				"We're open every day from 9am-9pm",
+				"Our hours are 9am-9pm every day"
+			]
+		},
+		{
+			"tag": "rental",
+			"patterns": [
+				"Can we rent a moped?",
+				"I'd like to rent a moped",
+				"How does this work?"
+			],
+			"responses": ["Are you looking to rent today or later this week?"],
+			"context_set": "rentalday"
+		},
+		{
+			"tag": "today",
+			"patterns": ["today"],
+			"responses": [
+				"For rentals today please call 1-800-MYMOPED",
+				"Same-day rentals please call 1-800-MYMOPED"
+			],
+			"context_filter": "rentalday"
+		}
+	]
+}
