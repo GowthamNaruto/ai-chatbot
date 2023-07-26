@@ -1,6 +1,6 @@
 # Python AI Chatbot
 
-This is a simple AI chatbot using TensorFlow and TFLearn. It's designed to process intents from a JSON file, preprocess the data, create a bag-of-words representation, build a neural network, train the model, and then use the trained model to respond to user input based on the detected intent.
+This AI chatbot is built using TensorFlow and TFLearn. It's designed to process intents from a JSON file, preprocess the data, create a bag-of-words representation, construct a neural network, train the model, and finally utilize the trained model to respond to user input based on the detected intent.".
 <br />
 <br />
 This is a simplified chatbot, and more sophisticated chatbots might involve a combination of natural language understanding (NLU) and natural language generation (NLG) systems, as well as the use of pre-trained language models like GPT-3 for more human-like interactions.
