@@ -43,10 +43,10 @@ The model and the pickled data are loaded back into variables.
 The code defines functions to clean up a user's input sentence and classify the intent based on the trained model's predictions.
 The bot generates a response based on the detected intent.
 
-#### Fork this project to use it.
+#### Fork this project.
 
 ```bash
-
+ git fork https://github.com/GowthamNaruto/ai-chatbot.git
 ```
 
 #### Install the necessary dependencies
@@ -55,7 +55,7 @@ The bot generates a response based on the detected intent.
 pip install tensorflow tflearn numpy nltk
 ```
 
-Run this command in yout terminal to get started
+Run this command on your terminal to get started
 
 ```bash
 python chatbot.py
