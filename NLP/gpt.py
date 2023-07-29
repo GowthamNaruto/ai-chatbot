@@ -1,3 +1,8 @@
+""" Create a virtual environment to manage your Python packages. This can help isolate your project's dependencies and prevent conflicts with other projects or the system-wide Python installation."""
+# Python -m venv myenu
+# Activate the virtual environment
+# myenv\Scripts\activate
+
 import keras_nlp
 
 # using KerasNLP with Keras Core
